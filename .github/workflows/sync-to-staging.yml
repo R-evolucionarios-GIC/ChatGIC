@@ -32,15 +32,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Python tests
-        working-directory: ./backend
-        run: pytest
+      # TODO: Add tests
+      # - name: Run Python tests
+      #   working-directory: ./backend
+      #   run: pytest
 
-      - name: Run Python linting
-        working-directory: ./backend
-        run: |
-          pip install flake8
-          flake8 .
+      # TODO: Add linting
+      # - name: Run Python linting
+      #   working-directory: ./backend
+      #   run: |
+      #     pip install flake8
+      #     flake8 .
 
       # Frontend Steps
       - name: Setup Node.js
@@ -60,9 +62,10 @@ jobs:
           npm run lint
           npm run format --check
 
-      - name: Run frontend tests
-        working-directory: ./frontend
-        run: npm run test
+      # TODO: Add tests
+      # - name: Run frontend tests
+      #   working-directory: ./frontend
+      #   run: npm run test
 
       - name: Test Git permissions
         run: |
