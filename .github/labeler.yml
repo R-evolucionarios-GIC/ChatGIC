@@ -1,0 +1,43 @@
+"frontend":
+  - changed-files:
+      - any-glob-to-any-file: "frontend/**/*"
+
+"backend":
+  - changed-files:
+      - any-glob-to-any-file: "backend/**/*"
+
+"documentation":
+  - changed-files:
+      - any-glob-to-any-file: "**/*.md"
+      - any-glob-to-any-file: "docs/**/*"
+
+"dependencies":
+  - changed-files:
+      - any-glob-to-any-file: "frontend/package.json"
+      - any-glob-to-any-file: "frontend/package-lock.json"
+      - any-glob-to-any-file: "frontend/yarn.lock"
+      - any-glob-to-any-file: "backend/package.json"
+      - any-glob-to-any-file: "backend/package-lock.json"
+      - any-glob-to-any-file: "backend/yarn.lock"
+
+"ci-cd":
+  - changed-files:
+      - any-glob-to-any-file: ".github/**/*"
+      - any-glob-to-any-file: ".gitlab-ci.yml"
+      - any-glob-to-any-file: "docker-compose*.yml"
+      - any-glob-to-any-file: "Dockerfile*"
+      - any-glob-to-any-file: ".dockerignore"
+
+"enhancement":
+  - head-branch: ["perf", "add", "improve", "feat"]
+
+"bug":
+  - head-branch: ["fix", "hotfix", "bug"]
+
+"refactor":
+  - head-branch: ["refactor", "chore"]
+
+"ignore":
+  - head-branch: ["ci", "test"]
+  - base-branch: ["release/"]
+
