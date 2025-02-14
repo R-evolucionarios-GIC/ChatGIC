@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../../assets/background/background-sign.png') center/cover no-repeat;
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.login-container {
+    background: #1e1e2e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    text-align: center;
+}
+
+/* Header e logo */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.logo-site { width: 32px; }
+
+/* Campos de entrada */
+.input-container {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin: 15px auto;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #000;
+    color: white;
+    box-sizing: border-box;
+}
+
+.input-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-container input[type="password"],
+.input-container input[type="text"][id="password"] {
+    padding-right: 40px;
+}
+
+/* Botão de mostrar senha */
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.eye-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1) brightness(100%);
+}
+
+/* Botão principal */
+.button-container {
+    margin: 20px auto 0;
+}
+
+.button-container button {
+    width: 100%;
+    padding: 12px;
+    background: #2B2066;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s;
+}
+
+.button-container button:hover {
+    background: #382a85;
+    transform: scale(1.02);
+}
+
+/* Link Login/Cadastro */
+.switch-auth {
+    margin-top: 15px;
+}
+
+.auth-link {
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
+}
+
+.auth-link:hover {
+    opacity: 0.8;
+}
+
+/* Alertas */
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: #1e1e2e;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 300px;
+    text-align: center;
+    white-space: pre-line;
+    z-index: 1000;
+    display: none;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
+
+.alert.error { border-left: 4px solid #ff4444; }
+.alert.success { border-left: 4px solid #00C851; }
+.alert.show { display: block; animation: slideIn 0.3s ease-out; }
+.alert.hide { opacity: 0; }
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #4a90e2;
+    transform-origin: left;
+}
+
+/* Animações */
+@keyframes slideIn {
+    from { transform: translate(-50%, -100%); opacity: 0; }
+    to { transform: translate(-50%, 0); opacity: 1; }
+}
+
+@keyframes shrink {
+    from { width: 100%; }
+    to { width: 0%; }
+}
