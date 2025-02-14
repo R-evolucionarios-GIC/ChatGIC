@@ -5,31 +5,30 @@ Projeto Final da disciplina de Engenharia de Software I (MATA62). Projeto que co
 ## Estrutura do Projeto
 
 ```
-frontend/                                  # Pasta frontend
-├── src/                                   # Pasta src do projeto
-│   ├──assets/                             # Pasta de assets do projeto
-│   │  ├── background/                     # Imagens de fundo
-│   │  │   └── background-sign.png         # Imagem de fundo das telas de autenticação
-│   │  ├── figma-screens/                  # Telas desenvolvidas no Figma
-│   │  │   ├── home/                       # Telas do Figma - Home Screen
-│   │  │   │   ├── home.png                # Tela - Home Screen
-│   │  │   │   └── admin.png               # Tela - Admin Screen
-│   │  │   └── sign/                       # Telas do Figma - Autenticação
-│   │  │       ├── in.png                  # Tela - Login Screen
-│   │  │       └── up.png                  # Tela - Cadastro Screen
-│   │  └── icons/                          # Ícones do projeto
-│   │       ├── eye.svg                    # Ícone para mostrar/ocultar senha
-│   │       └── logo-site.png              # Logo ICUFBA
-│   └──screens/                            # Pasta de telas do projeto
-│      ├── home/                           # Tela principal
-│      │    ├── home.html                  # Página inicial após autenticação
-│      │    └── styles.html                # Estilos da página inicial após autenticação
-│      └── sign/                           # Telas de autenticação
-│          ├── in.html                     # Login
-│          ├── script.js                   # Lógica de autenticação e validação
-│          ├── styles.css                  # Estilos das duas telas
-│          └── up.html                     # Cadastro
-└── Readme.md                              # Você está aqui!
+frontend/                               # Pasta frontend
+├── assets/                             # Pasta de assets do projeto
+│   ├── background/                     # Imagens de fundo
+│   │   └── background-sign.png         # Imagem de fundo das telas de autenticação
+│   ├── figma-screens/                  # Telas desenvolvidas no Figma
+│   │   ├── home/                       # Telas do Figma - Home Screen
+│   │   │   ├── home.png                # Tela - Home Screen
+│   │   │   └── admin.png               # Tela - Admin Screen
+│   │   └── sign/                       # Telas do Figma - Autenticação
+│   │       ├── in.png                  # Tela - Login Screen
+│   │       └── up.png                  # Tela - Cadastro Screen
+│   └── icons/                          # Ícones do projeto
+│       ├── eye.svg                     # Ícone para mostrar/ocultar senha
+│       └── logo-site.png               # Logo ICUFBA
+├── screens/                            # Pasta de telas do projeto
+│   ├── home/                           # Tela principal
+│   │    ├── home.html                  # Página inicial após autenticação
+│   │    └── styles.html                # Estilos da página inicial após autenticação
+│   └── sign/                           # Telas de autenticação
+│       ├── in.html                     # Login
+│       ├── script.js                   # Lógica de autenticação e validação
+│       ├── styles.css                  # Estilos das duas telas
+│       └── up.html                     # Cadastro
+└── Readme.md                           # Você está aqui!
 ```
 
 ## Descrição dos Arquivos
@@ -76,10 +75,10 @@ frontend/                                  # Pasta frontend
 ## Telas desenvolvidas no Figma
 
 1. Login Screen
-![Tela de Login do ChatGIC](./src/assets/figma-screens/sign/in.png)
+![Tela de Login do ChatGIC](./assets/figma-screens/sign/in.png)
 2. Register Screen
-![Tela de Cadastro do ChatGIC](./src/assets/figma-screens/sign/up.png)
+![Tela de Cadastro do ChatGIC](./assets/figma-screens/sign/up.png)
 3. Home Screen
-![Tela de Home do ChatGIC](./src/assets/figma-screens/home/home.png)
+![Tela de Home do ChatGIC](./assets/figma-screens/home/home.png)
 4. Admin Screen
-![Tela de Admin do ChatGIC](./src/assets/figma-screens/home/admin.png)
+![Tela de Admin do ChatGIC](./assets/figma-screens/home/admin.png)
