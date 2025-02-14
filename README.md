@@ -88,10 +88,10 @@ chatgic/                                # Pasta do projeto
 ## Telas desenvolvidas no Figma
 
 1. Login Screen
-   ![Tela de Login do ChatGIC](./assets/figma-screens/sign/in.png)
+   ![Tela de Login do ChatGIC](./frontend/src/assets/figma-screens/sign/in.png)
 2. Register Screen
-   ![Tela de Cadastro do ChatGIC](./assets/figma-screens/sign/up.png)
+   ![Tela de Cadastro do ChatGIC](./frontend/src/assets/figma-screens/sign/up.png)
 3. Home Screen
-   ![Tela de Home do ChatGIC](./assets/figma-screens/home/home.png)
+   ![Tela de Home do ChatGIC](./frontend/src/assets/figma-screens/home/home.png)
 4. Admin Screen
-   ![Tela de Admin do ChatGIC](./assets/figma-screens/home/admin.png)
+   ![Tela de Admin do ChatGIC](./frontend/src/assets/figma-screens/home/admin.png)
